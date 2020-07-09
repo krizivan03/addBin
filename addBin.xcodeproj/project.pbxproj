@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,13 @@
 		98A860B624A98EFF00E91B13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A860B424A98EFF00E91B13 /* Main.storyboard */; };
 		98A860B824A98F0100E91B13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98A860B724A98F0100E91B13 /* Assets.xcassets */; };
 		98A860BB24A98F0100E91B13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98A860B924A98F0100E91B13 /* LaunchScreen.storyboard */; };
+		98A860C724AC47CF00E91B13 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 98A860C624AC47CF00E91B13 /* Podfile */; };
+		98A860C924AED65F00E91B13 /* secondTuringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98A860C824AED65E00E91B13 /* secondTuringViewController.swift */; };
+		EDB6241C26AC499B6F84D527 /* Pods_addBin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B78B1A580BA0A1B83EB23AAD /* Pods_addBin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4D46056ED2DF021CDDAD57B3 /* Pods-addBin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-addBin.release.xcconfig"; path = "Target Support Files/Pods-addBin/Pods-addBin.release.xcconfig"; sourceTree = "<group>"; };
 		98A860AB24A98EFF00E91B13 /* addBin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = addBin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98A860AE24A98EFF00E91B13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98A860B024A98EFF00E91B13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,10 @@
 		98A860B724A98F0100E91B13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98A860BA24A98F0100E91B13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		98A860BC24A98F0100E91B13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98A860C624AC47CF00E91B13 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		98A860C824AED65E00E91B13 /* secondTuringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondTuringViewController.swift; sourceTree = "<group>"; };
+		B78B1A580BA0A1B83EB23AAD /* Pods_addBin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_addBin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9D2791F532422C0DE302CA0 /* Pods-addBin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-addBin.debug.xcconfig"; path = "Target Support Files/Pods-addBin/Pods-addBin.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EDB6241C26AC499B6F84D527 /* Pods_addBin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4834E059F73182DEEC5315CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9D2791F532422C0DE302CA0 /* Pods-addBin.debug.xcconfig */,
+				4D46056ED2DF021CDDAD57B3 /* Pods-addBin.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		92F38AB3FD4BD9D5E4B2E348 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B78B1A580BA0A1B83EB23AAD /* Pods_addBin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		98A860A224A98EFE00E91B13 = {
 			isa = PBXGroup;
 			children = (
+				98A860C624AC47CF00E91B13 /* Podfile */,
 				98A860AD24A98EFF00E91B13 /* addBin */,
 				98A860AC24A98EFF00E91B13 /* Products */,
+				4834E059F73182DEEC5315CB /* Pods */,
+				92F38AB3FD4BD9D5E4B2E348 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,6 +88,7 @@
 				98A860AE24A98EFF00E91B13 /* AppDelegate.swift */,
 				98A860B024A98EFF00E91B13 /* SceneDelegate.swift */,
 				98A860B224A98EFF00E91B13 /* ViewController.swift */,
+				98A860C824AED65E00E91B13 /* secondTuringViewController.swift */,
 				98A860B424A98EFF00E91B13 /* Main.storyboard */,
 				98A860B724A98F0100E91B13 /* Assets.xcassets */,
 				98A860B924A98F0100E91B13 /* LaunchScreen.storyboard */,
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 98A860BF24A98F0100E91B13 /* Build configuration list for PBXNativeTarget "addBin" */;
 			buildPhases = (
+				25A7F67B52247A8A4CE5719E /* [CP] Check Pods Manifest.lock */,
 				98A860A724A98EFE00E91B13 /* Sources */,
 				98A860A824A98EFE00E91B13 /* Frameworks */,
 				98A860A924A98EFE00E91B13 /* Resources */,
+				F5336BE6E3C3B332F3E3784A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,11 +159,54 @@
 			files = (
 				98A860BB24A98F0100E91B13 /* LaunchScreen.storyboard in Resources */,
 				98A860B824A98F0100E91B13 /* Assets.xcassets in Resources */,
+				98A860C724AC47CF00E91B13 /* Podfile in Resources */,
 				98A860B624A98EFF00E91B13 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		25A7F67B52247A8A4CE5719E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-addBin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5336BE6E3C3B332F3E3784A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-addBin/Pods-addBin-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-addBin/Pods-addBin-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-addBin/Pods-addBin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		98A860A724A98EFE00E91B13 /* Sources */ = {
@@ -140,6 +215,7 @@
 			files = (
 				98A860B324A98EFF00E91B13 /* ViewController.swift in Sources */,
 				98A860AF24A98EFF00E91B13 /* AppDelegate.swift in Sources */,
+				98A860C924AED65F00E91B13 /* secondTuringViewController.swift in Sources */,
 				98A860B124A98EFF00E91B13 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +358,7 @@
 		};
 		98A860C024A98F0100E91B13 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9D2791F532422C0DE302CA0 /* Pods-addBin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +377,7 @@
 		};
 		98A860C124A98F0100E91B13 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D46056ED2DF021CDDAD57B3 /* Pods-addBin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
